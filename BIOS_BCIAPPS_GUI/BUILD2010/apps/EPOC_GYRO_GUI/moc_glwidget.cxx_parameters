@@ -1,0 +1,21 @@
+-IC:/Qt/4.8.4/include
+-IC:/Qt/4.8.4/include/QtOpenGL
+-IC:/Qt/4.8.4/include/phonon
+-IC:/Qt/4.8.4/include/QtMultimedia
+-IC:/Qt/4.8.4/include/QtGui
+-IC:/Qt/4.8.4/include/QtNetwork
+-IC:/Qt/4.8.4/include/QtCore
+-IC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/glut_3.7.6/include
+-IC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/XavierSDK/include
+-DQT_DLL
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT_OPENGL_LIB
+-DQT_PHONON_LIB
+-DQT_MULTIMEDIA_LIB
+-DQT_GUI_LIB
+-DQT_NETWORK_LIB
+-DQT_CORE_LIB
+-DWIN32
+-o
+C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/moc_glwidget.cxx
+C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/glwidget.h

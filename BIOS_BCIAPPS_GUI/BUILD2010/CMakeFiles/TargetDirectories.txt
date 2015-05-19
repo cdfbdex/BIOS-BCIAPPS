@@ -1,0 +1,3 @@
+C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/ALL_BUILD.dir
+C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/ZERO_CHECK.dir
+C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/CMakeFiles/BCI_GUI.dir

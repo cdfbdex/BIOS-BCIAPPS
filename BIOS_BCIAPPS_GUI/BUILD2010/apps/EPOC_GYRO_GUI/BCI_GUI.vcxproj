@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{16A900E8-F358-4163-8E9E-833380608CC7}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>BCI_GUI</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">BCI_GUI.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">BCI_GUI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BCI_GUI.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BCI_GUI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">BCI_GUI.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">BCI_GUI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">BCI_GUI.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">BCI_GUI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_DLL;QT_OPENGL_LIB;QT_PHONON_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;QT_DLL;QT_OPENGL_LIB;QT_PHONON_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt\4.8.4\lib\QtOpenGLd4.lib;C:\Qt\4.8.4\lib\phonond4.lib;C:\Qt\4.8.4\lib\QtMultimediad4.lib;C:\Qt\4.8.4\lib\QtGuid4.lib;C:\Qt\4.8.4\lib\QtNetworkd4.lib;C:\Qt\4.8.4\lib\QtCored4.lib;..\..\..\3rdparty\glut_3.7.6\lib\glut32.lib;edk.lib;C:\Qt\4.8.4\lib\qtmaind.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/XavierSDK/lib/x86;C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/XavierSDK/lib/x86/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/Debug/BCI_GUI.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/Debug/BCI_GUI.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_DLL;QT_NO_DEBUG;QT_OPENGL_LIB;QT_PHONON_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_DLL;QT_NO_DEBUG;QT_OPENGL_LIB;QT_PHONON_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt\4.8.4\lib\QtOpenGL4.lib;C:\Qt\4.8.4\lib\phonon4.lib;C:\Qt\4.8.4\lib\QtMultimedia4.lib;C:\Qt\4.8.4\lib\QtGui4.lib;C:\Qt\4.8.4\lib\QtNetwork4.lib;C:\Qt\4.8.4\lib\QtCore4.lib;..\..\..\3rdparty\glut_3.7.6\lib\glut32.lib;edk.lib;C:\Qt\4.8.4\lib\qtmain.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/XavierSDK/lib/x86;C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/XavierSDK/lib/x86/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/Release/BCI_GUI.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/Release/BCI_GUI.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_DLL;QT_NO_DEBUG;QT_OPENGL_LIB;QT_PHONON_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_DLL;QT_NO_DEBUG;QT_OPENGL_LIB;QT_PHONON_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt\4.8.4\lib\QtOpenGL4.lib;C:\Qt\4.8.4\lib\phonon4.lib;C:\Qt\4.8.4\lib\QtMultimedia4.lib;C:\Qt\4.8.4\lib\QtGui4.lib;C:\Qt\4.8.4\lib\QtNetwork4.lib;C:\Qt\4.8.4\lib\QtCore4.lib;..\..\..\3rdparty\glut_3.7.6\lib\glut32.lib;edk.lib;C:\Qt\4.8.4\lib\qtmain.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/XavierSDK/lib/x86;C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/XavierSDK/lib/x86/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/MinSizeRel/BCI_GUI.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/MinSizeRel/BCI_GUI.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_DLL;QT_NO_DEBUG;QT_OPENGL_LIB;QT_PHONON_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_DLL;QT_NO_DEBUG;QT_OPENGL_LIB;QT_PHONON_LIB;QT_MULTIMEDIA_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Qt\4.8.4\include;C:\Qt\4.8.4\include\QtOpenGL;C:\Qt\4.8.4\include\phonon;C:\Qt\4.8.4\include\QtMultimedia;C:\Qt\4.8.4\include\QtGui;C:\Qt\4.8.4\include\QtNetwork;C:\Qt\4.8.4\include\QtCore;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\glut_3.7.6\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\include;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt\4.8.4\lib\QtOpenGL4.lib;C:\Qt\4.8.4\lib\phonon4.lib;C:\Qt\4.8.4\lib\QtMultimedia4.lib;C:\Qt\4.8.4\lib\QtGui4.lib;C:\Qt\4.8.4\lib\QtNetwork4.lib;C:\Qt\4.8.4\lib\QtCore4.lib;..\..\..\3rdparty\glut_3.7.6\lib\glut32.lib;edk.lib;C:\Qt\4.8.4\lib\qtmain.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/XavierSDK/lib/x86;C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/3rdparty/XavierSDK/lib/x86/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/RelWithDebInfo/BCI_GUI.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/RelWithDebInfo/BCI_GUI.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\apps\EPOC_GYRO_GUI\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI" "-BC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010" --check-stamp-file "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/CMakeLists.txt;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindQt4.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\MacroAddFileDependencies.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakePushCheckState.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Qt4ConfigDependentSettings.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Qt4Macros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\UseQt4.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKConfigVersion.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKConfig.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKTargets.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeConfigurableFile.in;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeConfigurableFile.in;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\qplayer.qrc;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI" "-BC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010" --check-stamp-file "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/CMakeLists.txt;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindQt4.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\MacroAddFileDependencies.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakePushCheckState.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Qt4ConfigDependentSettings.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Qt4Macros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\UseQt4.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKConfigVersion.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKConfig.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKTargets.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeConfigurableFile.in;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeConfigurableFile.in;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\qplayer.qrc;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI" "-BC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010" --check-stamp-file "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/CMakeLists.txt;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindQt4.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\MacroAddFileDependencies.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakePushCheckState.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Qt4ConfigDependentSettings.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Qt4Macros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\UseQt4.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKConfigVersion.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKConfig.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKTargets.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeConfigurableFile.in;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeConfigurableFile.in;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\qplayer.qrc;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-HC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI" "-BC:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010" --check-stamp-file "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/CMakeLists.txt;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindQt4.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckCXXSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\MacroAddFileDependencies.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakePushCheckState.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Qt4ConfigDependentSettings.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Qt4Macros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\UseQt4.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindGLUT.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKConfigVersion.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKConfig.cmake;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\3rdparty\XavierSDK\XavierSDKTargets.cmake;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeConfigurableFile.in;C:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeConfigurableFile.in;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\qplayer.qrc;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\3f370c01a060e608877aa28b05362749\moc_BCI_mainWindow.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_BCI_mainWindow.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\4.8.4\bin\moc.exe "@C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/moc_BCI_mainWindow.cxx_parameters"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/3f370c01a060e608877aa28b05362749/moc_BCI_mainWindow.cxx.rule;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\BCI_mainWindow.h;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_BCI_mainWindow.cxx_parameters;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_BCI_mainWindow.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_BCI_mainWindow.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\4.8.4\bin\moc.exe "@C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/moc_BCI_mainWindow.cxx_parameters"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/3f370c01a060e608877aa28b05362749/moc_BCI_mainWindow.cxx.rule;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\BCI_mainWindow.h;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_BCI_mainWindow.cxx_parameters;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_BCI_mainWindow.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating moc_BCI_mainWindow.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\4.8.4\bin\moc.exe "@C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/moc_BCI_mainWindow.cxx_parameters"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/3f370c01a060e608877aa28b05362749/moc_BCI_mainWindow.cxx.rule;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\BCI_mainWindow.h;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_BCI_mainWindow.cxx_parameters;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_BCI_mainWindow.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating moc_BCI_mainWindow.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\4.8.4\bin\moc.exe "@C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/moc_BCI_mainWindow.cxx_parameters"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/3f370c01a060e608877aa28b05362749/moc_BCI_mainWindow.cxx.rule;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\BCI_mainWindow.h;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_BCI_mainWindow.cxx_parameters;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_BCI_mainWindow.cxx</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\3f370c01a060e608877aa28b05362749\moc_glwidget.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating moc_glwidget.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\4.8.4\bin\moc.exe "@C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/moc_glwidget.cxx_parameters"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/3f370c01a060e608877aa28b05362749/moc_glwidget.cxx.rule;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\glwidget.h;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_glwidget.cxx_parameters;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_glwidget.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating moc_glwidget.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\4.8.4\bin\moc.exe "@C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/moc_glwidget.cxx_parameters"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/3f370c01a060e608877aa28b05362749/moc_glwidget.cxx.rule;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\glwidget.h;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_glwidget.cxx_parameters;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_glwidget.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating moc_glwidget.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\4.8.4\bin\moc.exe "@C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/moc_glwidget.cxx_parameters"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/3f370c01a060e608877aa28b05362749/moc_glwidget.cxx.rule;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\glwidget.h;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_glwidget.cxx_parameters;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_glwidget.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating moc_glwidget.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd "C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Qt\4.8.4\bin\moc.exe "@C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/moc_glwidget.cxx_parameters"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/CMakeFiles/3f370c01a060e608877aa28b05362749/moc_glwidget.cxx.rule;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\glwidget.h;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_glwidget.cxx_parameters;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\moc_glwidget.cxx</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\apps\EPOC_GYRO_GUI\BCI_mainWindow.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ui_BCI_mainWindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Qt\4.8.4\bin\uic.exe -o "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/ui_BCI_mainWindow.h" "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/BCI_mainWindow.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/BCI_mainWindow.ui;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\BCI_mainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\ui_BCI_mainWindow.h</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ui_BCI_mainWindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Qt\4.8.4\bin\uic.exe -o "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/ui_BCI_mainWindow.h" "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/BCI_mainWindow.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/BCI_mainWindow.ui;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\BCI_mainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\ui_BCI_mainWindow.h</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ui_BCI_mainWindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Qt\4.8.4\bin\uic.exe -o "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/ui_BCI_mainWindow.h" "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/BCI_mainWindow.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/BCI_mainWindow.ui;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\BCI_mainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\ui_BCI_mainWindow.h</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ui_BCI_mainWindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Qt\4.8.4\bin\uic.exe -o "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/ui_BCI_mainWindow.h" "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/BCI_mainWindow.ui"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/BCI_mainWindow.ui;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\BCI_mainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\ui_BCI_mainWindow.h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\apps\EPOC_GYRO_GUI\qplayer.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating qrc_qplayer.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Qt\4.8.4\bin\rcc.exe -name qplayer -o "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/qrc_qplayer.cxx" "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/qplayer.qrc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/qplayer.qrc;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\wrench73.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\logo-bios.jpg;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\userManual.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\VideoWall_icon.ico;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\videowall_icon_2.ico;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\sendVideo.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\application-exit.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\delete.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\fileopen.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\next.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\pause.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\play.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\prev.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\stop.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\info.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\exit.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\remove.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\qt.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\plus.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\editcut.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\fileinfo-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\list-add.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\list-remove.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\down.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\down-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\up.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\up-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\auto_layout.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\qplayer.qrc.depends;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\qplayer.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\qrc_qplayer.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating qrc_qplayer.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Qt\4.8.4\bin\rcc.exe -name qplayer -o "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/qrc_qplayer.cxx" "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/qplayer.qrc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/qplayer.qrc;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\wrench73.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\logo-bios.jpg;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\userManual.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\VideoWall_icon.ico;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\videowall_icon_2.ico;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\sendVideo.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\application-exit.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\delete.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\fileopen.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\next.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\pause.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\play.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\prev.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\stop.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\info.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\exit.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\remove.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\qt.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\plus.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\editcut.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\fileinfo-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\list-add.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\list-remove.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\down.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\down-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\up.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\up-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\auto_layout.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\qplayer.qrc.depends;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\qplayer.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\qrc_qplayer.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating qrc_qplayer.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Qt\4.8.4\bin\rcc.exe -name qplayer -o "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/qrc_qplayer.cxx" "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/qplayer.qrc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/qplayer.qrc;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\wrench73.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\logo-bios.jpg;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\userManual.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\VideoWall_icon.ico;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\videowall_icon_2.ico;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\sendVideo.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\application-exit.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\delete.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\fileopen.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\next.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\pause.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\play.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\prev.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\stop.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\info.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\exit.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\remove.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\qt.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\plus.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\editcut.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\fileinfo-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\list-add.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\list-remove.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\down.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\down-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\up.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\up-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\auto_layout.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\qplayer.qrc.depends;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\qplayer.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\qrc_qplayer.cxx</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating qrc_qplayer.cxx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Qt\4.8.4\bin\rcc.exe -name qplayer -o "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/apps/EPOC_GYRO_GUI/qrc_qplayer.cxx" "C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/qplayer.qrc"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/apps/EPOC_GYRO_GUI/qplayer.qrc;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\wrench73.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\logo-bios.jpg;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\userManual.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\VideoWall_icon.ico;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\videowall_icon_2.ico;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\sendVideo.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\application-exit.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\delete.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\fileopen.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\next.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\pause.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\play.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\prev.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\stop.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\info.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\exit.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\remove.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\qt.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\plus.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\editcut.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\fileinfo-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\list-add.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\list-remove.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\down.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\down-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\up.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\up-32.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\Images\auto_layout.png;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\qplayer.qrc.depends;C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\apps\EPOC_GYRO_GUI\qplayer.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\luis.velez\Documentos\APLICACIONES_MURO\Brain Computer Interface\BIOS_BCIAPPS_GUI\BUILD2010\apps\EPOC_GYRO_GUI\qrc_qplayer.cxx</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui_BCI_mainWindow.h" />
+    <ClCompile Include="..\..\..\apps\EPOC_GYRO_GUI\BCI_mainWindow.cpp"  />
+    <ClCompile Include="..\..\..\apps\EPOC_GYRO_GUI\glwidget.cpp"  />
+    <ClCompile Include="..\..\..\apps\EPOC_GYRO_GUI\main.cpp"  />
+    <ResourceCompile Include="..\..\..\apps\EPOC_GYRO_GUI\BCI_setIcon.rc"  />
+    <ClCompile Include="moc_BCI_mainWindow.cxx"  />
+    <ClCompile Include="moc_glwidget.cxx"  />
+    <ClCompile Include="qrc_qplayer.cxx"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/luis.velez/Documentos/APLICACIONES_MURO/Brain Computer Interface/BIOS_BCIAPPS_GUI/BUILD2010/ZERO_CHECK.vcxproj">
+      <Project>744370DD-2F2B-48EC-A6A4-C4198A657D22</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
